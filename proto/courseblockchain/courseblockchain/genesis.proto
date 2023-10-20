@@ -1,0 +1,12 @@
+syntax = "proto3";
+package courseblockchain.courseblockchain;
+
+import "gogoproto/gogo.proto";
+import "courseblockchain/courseblockchain/params.proto";
+
+option go_package = "course-blockchain/x/courseblockchain/types";
+
+// GenesisState defines the courseblockchain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

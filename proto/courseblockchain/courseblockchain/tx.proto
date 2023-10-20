@@ -1,0 +1,7 @@
+syntax = "proto3";
+package courseblockchain.courseblockchain;
+
+option go_package = "course-blockchain/x/courseblockchain/types";
+
+// Msg defines the Msg service.
+service Msg {}
